@@ -280,7 +280,10 @@ body {
 
 .padded_list {
     margin-top: 3rem;
-    margin-left: 2rem;
+}
+
+.pad1 {
+    margin-left: 6rem;
 }
 
 .Dummy_Socials {
@@ -305,8 +308,10 @@ body {
     }
 
     #pgTitle {
-        width: 20rem;
+        width: 12rem;
         font-size: 2rem;
+        text-align: center;
+        margin-left: 5rem;
     }
 
     #chefIMG {
@@ -318,7 +323,7 @@ body {
     #top_logo {
         width: 4rem;
         height: 3rem;
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
 
     .top-container {
@@ -341,7 +346,7 @@ body {
     }
     
     #BTN {
-        margin-left: 2.6rem;
+        margin-left: 2.8rem;
     }
 
     .contacts {
@@ -395,16 +400,21 @@ body {
     }
 
     .icons {
-        width: 0.5rem;
-        height: 1rem;
+        width: 0.6rem;
+        height: 1.2rem;
     }
 
     .list {
-        font-size: 0.3rem;
+        font-size: 0.7rem;
     }
 
     .padded_list {
-        margin-top: 4rem;
+        margin-top: 3.6rem;
+        margin-left: 1.2rem;
+    }
+
+    .pad1 {
+        margin-left: 1.2rem;
     }
 
     .recipeIMG {
