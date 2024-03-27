@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5rem;
+    background: wheat;
+}
+
+#pgTitle {
+    text-align: right;
+    width: 50rem;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    color: brown;
+}
+
+.top-container {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+.brown_txt {
+    color: brown;
+}
+
+#chefIMG {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.left_side {
+    width: 40rem;
+}
+
+#Reg_point {
+    width: 30rem;
+    margin: 1rem 0rem 0rem 2rem;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    color: brown;
+}
+
+.error {
+    margin-left: 14rem;
+    margin-bottom: -0.7rem;
+    color: red;
+    display: none;
+}
+
+.fill {
+    width: 24rem;
+    height: 2rem;
+    padding: 0.6rem;
+    margin-top: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid brown;
+}
+
+#BTN {
+    background: orange;
+    color: white;
+    text-align: center;
+    margin-left: 2.6rem;
+    border: orange;
+    padding: 0;
+    cursor: pointer;
+}
+
+#BTN:hover {
+    color: brown;
+    background-color: white;
+    border: 1px solid orange;
+}
+
+.right_side {
+    margin-left: 10rem;
+    width: 25rem;
+}
+
+.contacts {
+    margin-top: -2rem;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+#contact_head {
+    margin-bottom: -0.3rem;
+}
+
+.Img_Box {
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.slides {
+    /* float: left; */
+    height: 10.5rem;
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+.slideIMG {
+    width: 20rem;
+    height: 10.5rem;
+    border-radius: 0.4rem;
+}
+
+.slide_box {
+    display: flex;
+    width: calc(20rem * 5);
+    animation: slides 10s ease infinite;
+}
+
+@keyframes slides {
+    20% {
+        margin-left: 0rem;
+    }
+
+    40% {
+        margin-left: calc(-20rem * 1);
+    }
+
+    60% {
+        margin-left: calc(-20rem * 2);
+    }
+
+    80% {
+        margin-left: calc(-20rem * 3);
+    }
+
+    100% {
+        margin-left: calc(-20rem * 4);
+    }
+}
+
+.desc {
+    position: absolute;
+    color: orange;
+    text-align: center;
+    margin-left: -20rem;
+    font-size: 2rem;
+}
+
+.bottom-ctner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#BTN2 {
+    background: orange;
+    color: white;
+    text-align: center;
+    margin-left: 0.5rem;
+    border: orange;
+    padding: 0;
+    width: 4rem;
+    cursor: pointer;
+}
+
+#BTN2:hover {
+    color: brown;
+    background-color: white;
+    border: orange;
+}
+
+.recipes {
+    width: 84.3rem;
+    background: rgba(250, 101, 101, 0.726);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.labels {
+    position: absolute;
+    color: white;
+    top: 50%;
+    margin-left: -15rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* #afangSoup, #coconutRice, #whiteSoup, #chickenStew, #coleslaw {
+    width: 25rem;
+    height: 12rem;
+} */
+
+.recipe_PG {
+    background: rgba(250, 101, 101, 0.726);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.uniq_Recipe {
+    background: white;
+    border-radius: 0.5rem;
+    width: 40rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+#afang_dish, #coconutRice_dish, #whiteSoup_dish, #ChickenStew_dish, #coleslaw_dish {
+    display: none;
+}
+
+.recipeIMG {
+    width: 36rem;
+    height: 17rem;
+    border-radius: 0.5rem;
+}
+
+.recipe_header, .ingr_header, .Inst_header {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ingredients {
+    background: rgba(250, 101, 101, 0.726);
+    border-radius: 0.5rem;
+    margin: 1rem 0.5rem 0rem 0.5rem;
+    padding: 0.1rem 0rem 0.5rem 2rem;
+}
+
+.icons {
+    width: 1.5rem;
+    height: 2rem;
+    padding-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.dials {
+    width: 1.2rem;
+    height: 1.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+#top_logo {
+    width: 7rem;
+    height: 6rem;
+    margin-left: 4rem;
+    margin-bottom: -2rem;
+}
+
+.footNote {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list {
+    list-style: none;
+    cursor: pointer;
+}
+
+.padded_list {
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.Dummy_Socials {
+    background: url(./images/dummyIMG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    width: 84.3rem;
+}
+
+.dummy_about {
+    background: url(./images/dummyAboutIMG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    width: 84.3rem;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        max-width: 375px;
+    }
+
+    #pgTitle {
+        width: 20rem;
+        font-size: 2rem;
+    }
+
+    #chefIMG {
+        width: 1rem;
+        height: 1rem;
+        padding-top: 0.1rem;
+    }
+
+    #top_logo {
+        width: 4rem;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+
+    .top-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 1rem 0rem 1rem;
+        gap: 1rem;
+    }
+
+    #Reg_point {
+        width: 22rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+    .error {
+        margin-left: 10rem;
+    }
+    
+    .fill {
+        width: 15rem;
+    }
+    
+    #BTN {
+        margin-left: 2.6rem;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .right_side {
+        margin-left: 0rem;
+        width: 22rem;
+    }
+
+    
+    .Img_Box {
+        margin-top: 0rem;
+    }
+    
+    .slides {
+        width: 19rem;
+    }
+    
+    .slideIMG {
+        width: 19rem;
+        height: 10.5rem;
+    }
+    
+    .slide_box {
+        display: flex;
+        width: calc(19rem * 5);
+    }
+
+    .desc {
+        margin-left: -19rem;
+    }
+
+    .bottom-ctner {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #BTN2 {
+        margin-left: 0.5rem;
+    }
+
+    .recipes {
+        width: 23.5rem;
+    }
+    
+    .labels {
+        margin-left: -18rem;
+    }
+
+    .icons {
+        width: 0.5rem;
+        height: 1rem;
+    }
+
+    .list {
+        font-size: 0.3rem;
+    }
+
+    .padded_list {
+        margin-top: 4rem;
+    }
+
+    .recipeIMG {
+        width: 18rem;
+        height: 10rem;
+    }
+    
+    .ingredients {
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .uniq_Recipe {
+        width: 22rem;
+    }
+
+    #Chef_info {
+        width: 22rem;
+        text-align: center;
+    }
+
+    .Dummy_Socials {
+        width: 23rem;
+    }
+    
+    .dummy_about {
+        width: 23rem;
+    }
+}
