@@ -7,6 +7,7 @@
 body {
     line-height: 1.5rem;
     background: wheat;
+    width: 1440px;
 }
 
 #pgTitle {
@@ -73,6 +74,16 @@ body {
     cursor: pointer;
 }
 
+#success {
+    background: green;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: none;
+}
+
 #BTN:hover {
     color: brown;
     background-color: white;
@@ -80,7 +91,7 @@ body {
 }
 
 .right_side {
-    margin-left: 10rem;
+    margin-left: 15rem;
     width: 25rem;
 }
 
@@ -150,7 +161,7 @@ body {
     color: orange;
     text-align: center;
     margin-left: -20rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .bottom-ctner {
@@ -178,7 +189,7 @@ body {
 }
 
 .recipes {
-    width: 84.3rem;
+    width: 90em;
     background: rgba(250, 101, 101, 0.726);
     overflow: auto;
     white-space: nowrap;
@@ -205,6 +216,7 @@ body {
 
 .recipe_PG {
     background: rgba(250, 101, 101, 0.726);
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -218,7 +230,7 @@ body {
     padding: 2rem;
 }
 
-#afang_dish, #coconutRice_dish, #whiteSoup_dish, #ChickenStew_dish, #coleslaw_dish {
+#afang_dish, #coconutRice_dish, #whiteSoup_dish, #chickenStew_dish, #coleslaw_dish {
     display: none;
 }
 

@@ -21,15 +21,16 @@
             <h3>Course Registration</h3>
             <p class="error">required input</p>
             <label for="name">Name</label>
-            <input type="text" placeholder="Ade Oba" class="fill"> <br>
+            <input type="text" placeholder="Ade Oba" class="fill" id="name"> <br>
             <p class="error">required input</p>
             <label for="phone">Phone</label>
-            <input type="tel" placeholder="0803-344-****" class="fill" name="phone" pattern="[0-9]"> <br>
+            <input type="tel" placeholder="08033567453" class="fill" id="phone" name="phone" pattern="[0-9]{11}"> <br>
             <p class="error">required input</p>
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="example123@gmail.com" class="fill"> <br>
-            <button class="fill" id="BTN">Submit</button>
-            <p><b>NOTE:</b> Fill full name as should appear in Certificate</p>
+            <input type="email" name="email" placeholder="example123@gmail.com" class="fill" id="mail"> <br>
+            <button type="button" class="fill" id="BTN" onclick="reg()">Submit</button>
+            <h1 id="success">Welcome on board....</h1>
+            <p id="caution"><b>NOTE:</b> Fill full name as should appear in Certificate</p>
         </form>
     </div>
 
@@ -73,21 +74,21 @@
     <div class="Page_base">
         <h3 class="brown_txt">Free Course Recipes</h3>
         <form action="">
-        <p class="error">Unavailable recipe</p>
+        <p class="error" id="SRerror">Unavailable recipe</p>
         <label for="PSearch" class="brown_txt">Search Recipes</label>
-        <input type="search" name="PSearch" placeholder="Search..." class="fill">
-        <input type="submit" class="fill" id="BTN2">
+        <input type="search" name="PSearch" placeholder="Search..." class="fill" id="searching">
+        <button type="button" class="fill" id="BTN2" onclick="search()">Submit</button>
         </form>
         <div class="recipes">
-            <a href=""><img src="./images/Afang Soup.jpg" alt="" width="400" height="200"></a>
+            <a href="" id="Dish1" onclick="aDish()"><img src="./images/Afang Soup.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Afang Soup</span>
-            <a href=""><img src="./images/coconut rice.jpg" alt="" width="400" height="200"></a>
+            <a href="" id="Dish2" onclick="bDish()"><img src="./images/coconut rice.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Coconut Rice</span>
-            <a href=""><img src="./images/white soup.jpg" alt="" width="400" height="200"></a>
+            <a href="" id="Dish3" onclick="cDish()"><img src="./images/white soup.jpg" alt="" width="400" height="200"></a>
             <span class="labels">White Soup</span>
-            <a href=""><img src="./images/chicken stew.jpg" alt="" width="400" height="200"></a>
+            <a href="" id="Dish4" onclick="dDish()"><img src="./images/chicken stew.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Chicken Stew</span>
-            <a href=""><img src="./images/coleslaw.jpg" alt="" width="400" height="200"></a>
+            <a href="" id="Dish5" onclick="eDish()"><img src="./images/coleslaw.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Coleslaw Salad</span>
         </div>
     </div>
@@ -219,7 +220,7 @@
             </div>
         </div>
     </div>
-    <div class="uniq_Recipe" id="ChickenStew_dish"> <!--contains everything about Chicken stew-->
+    <div class="uniq_Recipe" id="chickenStew_dish"> <!--contains everything about Chicken stew-->
         <div class="detail_box">
                 <img src="./images/chicken stew.jpg" alt="Chicken Stew" class="recipeIMG">
                 <h1 class="recipe_header">Chicken Stew</h1>
@@ -336,5 +337,6 @@
         </div>
     </footer>
 </div>
+<script src="./recipe.js"></script>
 </body>
 </html>
