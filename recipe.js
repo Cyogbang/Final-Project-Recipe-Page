@@ -47,7 +47,7 @@ function search () {
     if (searcher.value == "") {
         console.log("empty");
         SearchERROR.style.display = "block"
-    } else if (searcher.value == "Coconut Rice") {
+    } else if (searcher.value == "Coconut rice" || searcher.value == "Coconut Rice" || searcher.value == "coconut rice") {
         console.log("coconut Rice")
         SearchERROR.style.display = "none";
         CoconutRICE.style.display = "block";
@@ -55,7 +55,7 @@ function search () {
         WhiteSOUP.style.display = "none";
         Coleslaw.style.display = "none";
         Afang.style.display = "none";                  
-    } else if (searcher.value == "Chicken Stew" || "chicken stew" || "Chicken stew") {
+    } else if (searcher.value == "Chicken stew" || searcher.value == "Chicken Stew" || searcher.value == "chicken stew" || searcher.value == "Stew") {
         console.log("stew");
         SearchERROR.style.display = "none";
         ChickenSTEW.style.display = "block";
@@ -63,7 +63,7 @@ function search () {
         Coleslaw.style.display = "none";
         Afang.style.display = "none";
         CoconutRICE.style.display = "none"; 
-    } else if (searcher.value == "White soup" || "White Soup" || "white soup") {
+    } else if (searcher.value == "White soup" || searcher.value == "White Soup" || searcher.value == "white soup") {
         console.log("White Soup");
         SearchERROR.style.display = "none";
         WhiteSOUP.style.display = "block";
@@ -71,7 +71,7 @@ function search () {
         Afang.style.display = "none";
         CoconutRICE.style.display = "none";
         ChickenSTEW.style.display = "none";
-    } else if (searcher.value == "Coleslaw Salad") {
+    } else if (searcher.value == "Coleslaw salad" || searcher.value == "Coleslaw Salad" || searcher.value == "coleslaw salad" || searcher.value == "Salad") {
         console.log("salad");
         SearchERROR.style.display = "none";
         Coleslaw.style.display = "block";
@@ -79,7 +79,7 @@ function search () {
         CoconutRICE.style.display = "none";
         ChickenSTEW.style.display = "none"
         WhiteSOUP.style.display = "none";
-    } else if (searcher.value == "Afang" || "Afang Soup") {
+    } else if (searcher.value == "Afang soup" || searcher.value == "Afang Soup" || searcher.value == "afang soup" || searcher.value == "Afang") {
         console.log("Soup");
         SearchERROR.style.display = "none";
         Afang.style.display = "block";
@@ -89,6 +89,11 @@ function search () {
         Coleslaw.style.display = "none";
     } else {
         SearchERROR.style.display = "block";
+        Afang.style.display = "none";
+        CoconutRICE.style.display = "none";
+        ChickenSTEW.style.display = "none"
+        WhiteSOUP.style.display = "none";
+        Coleslaw.style.display = "none";
     }
 }
     
