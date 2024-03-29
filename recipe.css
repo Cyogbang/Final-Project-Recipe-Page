@@ -230,9 +230,10 @@ body {
     padding: 2rem;
 }
 
-#afang_dish, #coconutRice_dish, #whiteSoup_dish, #chickenStew_dish, #coleslaw_dish {
+#afang_dish, #coconutRice_dish, #whiteSoup_dish, #chickenStew_dish, #coleslaw_dish  {
     display: none;
 }
+
 
 .recipeIMG {
     width: 36rem;
@@ -324,6 +325,7 @@ body {
         font-size: 2rem;
         text-align: center;
         margin-left: 5rem;
+        line-height: 1.8rem;
     }
 
     #chefIMG {

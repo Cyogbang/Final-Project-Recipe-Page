@@ -19,13 +19,13 @@
 
         <form id="Reg_point">
             <h3>Course Registration</h3>
-            <p class="error">required input</p>
+            <p class="error">required input missing</p>
             <label for="name">Name</label>
             <input type="text" placeholder="Ade Oba" class="fill" id="name"> <br>
-            <p class="error">required input</p>
+            <p class="error">required input missing</p>
             <label for="phone">Phone</label>
             <input type="tel" placeholder="08033567453" class="fill" id="phone" name="phone" pattern="[0-9]{11}"> <br>
-            <p class="error">required input</p>
+            <p class="error">required input missing</p>
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="example123@gmail.com" class="fill" id="mail"> <br>
             <button type="button" class="fill" id="BTN" onclick="reg()">Submit</button>
@@ -80,7 +80,7 @@
         <button type="button" class="fill" id="BTN2" onclick="search()">Submit</button>
         </form>
         <div class="recipes">
-            <a href="" id="Dish1" onclick="aDish()"><img src="./images/Afang Soup.jpg" alt="" width="400" height="200"></a>
+            <a href="" type="button" id="Dish1" onclick="aDish()"><img src="./images/Afang Soup.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Afang Soup</span>
             <a href="" id="Dish2" onclick="bDish()"><img src="./images/coconut rice.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Coconut Rice</span>
