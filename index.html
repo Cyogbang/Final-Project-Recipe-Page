@@ -8,16 +8,16 @@
     <link rel="icon" href="./images/favicon.ico">
 </head>
 <body>
-    
+    <!-- this container holds all the part before search -->
 <div class="top-container">
-    <div class="left_side">
+    <div class="left_side"> <!--this is the left wing, contains the reg section and PG Title-->
         <img src="./images/Logo-removebg-preview.png" alt="logo" class="logo" id="top_logo" >
         <h1 id="pgTitle">Chef C's culinary</h1>
         <p id="Chef_info" class="brown_txt"><span><img src="./images/Decadev Photo.jpg" alt="photo" id="chefIMG"></span><b>Cyprian Ogbang</b> popularly known 
         by his brand name <b>Chef C</b>, is a Nigerian based celebrated Chef in local and continental dishes. 
         This page will put out a few of his free recipes, to providing mouth-watering african dishes</p>
 
-        <form id="Reg_point">
+        <form id="Reg_point"> <!--Reg. Form-->
             <h3>Course Registration</h3>
             <p class="error">required input missing</p>
             <label for="name">Name</label>
@@ -34,7 +34,7 @@
         </form>
     </div>
 
-    <div class="right_side">
+    <div class="right_side"> <!--This side contains top contacts and the photo slideshow-->
         <div class="contacts brown_txt">
             <h3 id="contact_head">Contact and Socials</h3>
             <p><img src="./images/icon-phone.svg" alt="icon" class="icons dials"> <a href="tel:+2348051033776" target="_blank"></a>+234 805 103 3776</p>
@@ -44,7 +44,7 @@
             <p><img src="./images/image-removebg-preview (14).png" alt="icon" class="icons"> <a href="./dummySocials.html" target="_blank">ChefC_cNG</a></p>
         </div>
 
-        <div class="Img_Box">
+        <div class="Img_Box"> <!--Photo Slideshow container-->
         <div class="slide_box">
             <div class="slides">
                 <img src="./images/TrainingIMG_5.jpg" alt="Photo" class="slideIMG">
@@ -70,6 +70,8 @@
         </div>
     </div>
 </div>
+
+<!-- this container carries all that is visible from search to the scroolbar -->
 <div class="bottom-ctner">
     <div class="Page_base">
         <h3 class="brown_txt">Free Course Recipes</h3>
@@ -77,9 +79,10 @@
         <p class="error" id="SRerror">Unavailable recipe</p>
         <label for="PSearch" class="brown_txt">Search Recipes</label>
         <input type="search" name="PSearch" placeholder="Search..." class="fill" id="searching">
-        <button type="button" class="fill" id="BTN2" onclick="search()">Submit</button>
+        <button type="button" class="fill" id="BTN2" onclick="search()">Submit</button> 
+        <p id="available">AVAILABLE: Afang, Coconut rice, Chicken stew, White soup, Coleslaw Salad</p>
         </form>
-        <div class="recipes">
+        <div class="recipes"> <!--Scroll bar images-->
             <a href="" type="button" id="Dish1" onclick="aDish()"><img src="./images/Afang Soup.jpg" alt="" width="400" height="200"></a>
             <span class="labels">Afang Soup</span>
             <a href="" id="Dish2" onclick="bDish()"><img src="./images/coconut rice.jpg" alt="" width="400" height="200"></a>
@@ -93,6 +96,8 @@
         </div>
     </div>
 </div>
+
+<!-- These are the individual recipes boxes, each box properly grouped. this box is hidden from CSS -->
 <div class="recipe_PG"> <!--This is the general container for all recipes. to be displayed block-->
     <div class="uniq_Recipe" id="afang_dish"> <!--contains everything about afang-->
         <div class="detail_box">
@@ -307,6 +312,8 @@
     </div>
     <br>
     <hr>
+
+    <!-- This is the footer page. contains everything after the HR -->
     <footer class="footNote">
         <div class="info">
             <ul class="list">

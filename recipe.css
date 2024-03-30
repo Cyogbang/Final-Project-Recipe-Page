@@ -115,6 +115,12 @@ body {
     margin-top: 2rem;
 }
 
+.slide_box {
+    display: flex;
+    width: calc(20rem * 5);
+    animation: slides 10s ease infinite;
+}
+
 .slides {
     /* float: left; */
     height: 10.5rem;
@@ -126,12 +132,6 @@ body {
     width: 20rem;
     height: 10.5rem;
     border-radius: 0.4rem;
-}
-
-.slide_box {
-    display: flex;
-    width: calc(20rem * 5);
-    animation: slides 10s ease infinite;
 }
 
 @keyframes slides {
@@ -186,6 +186,10 @@ body {
     color: brown;
     background-color: white;
     border: orange;
+}
+
+#available {
+    color: green;
 }
 
 .recipes {
